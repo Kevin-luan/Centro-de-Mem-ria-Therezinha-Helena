@@ -1,0 +1,9 @@
+# Ativa o mecanismo de reescrita
+RewriteEngine On
+
+# Garante que o arquivo existe antes de redirecionar
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Redireciona para a página solicitada
+RewriteRule ^(.+)$ $1.php [L,QSA]

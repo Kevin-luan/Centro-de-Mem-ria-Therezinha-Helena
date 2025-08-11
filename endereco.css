@@ -1,0 +1,59 @@
+body{
+ font-family: Arial, Helvetica, sans-serif;
+ background-image: linear-gradient(to right, rgba(44, 88, 94 ),rgb(44, 90, 70));
+}
+
+.box{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(223, 129, 61);
+    padding: 15px;
+    border-radius: 30px;
+    
+}
+
+fieldset{
+    border: 5px solid  rgba(44, 88, 94 );
+    
+}
+
+legend{
+    border: 5px solid  rgba(44, 88, 94 );
+    padding: 15px;
+    background-color:  rgba(44, 88, 94 );
+    border-radius: 10px;
+
+    
+}
+
+.inputBox{
+    position: relative;
+}
+
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 5px solid  rgba(44, 88, 94 );
+    outline: none;
+    font-size: 20px;
+    color:rgb(227, 223, 211);
+    
+}
+
+#submit{
+    background-color:rgba(44, 88, 94 );
+    color: white;
+    cursor: pointer;
+
+
+}
+
+#submit:hover{
+  
+    color:rgba(44, 88, 94 );
+    background-color: white;
+
+}

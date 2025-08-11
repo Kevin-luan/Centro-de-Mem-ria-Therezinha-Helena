@@ -1,0 +1,172 @@
+
+
+
+
+
+
+
+/* v
+csceve 
+
+
+/* Estilo para o header */
+*{
+    font-family: 'Inter', sans-serif;
+}
+header {
+    background-color: rgb(120, 150, 100);    
+
+    
+    padding: 1rem;
+    
+    box-shadow: 0px 4px 0px 4px  rgba(57, 60, 54, 0.666);
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;    
+    position: relative;
+    z-index: 10;
+}
+
+/* Lista de navegação */
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+header li a {
+    text-decoration: none;
+    color:rgb(255, 255, 255);;
+    font-size: 1.1rem;
+}
+header li a:hover {
+    text-decoration: none;
+    color:rgb(255, 173, 96);;
+    font-size: 1.1rem;
+}
+
+header li i {
+    margin-right: 0.5rem;
+    color: rgb(255, 173, 96);
+}
+
+
+header li i:hover {
+    margin-right: 0.5rem;
+    color: rgb(255, 173, 96);
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 0.8rem;
+    }
+                                                                                                                          
+    header ul {
+        justify-content: center;
+        gap: 0.5rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header li a {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header ul {
+        gap: 0.4rem;
+    }
+
+    header li a {
+        font-size: 0.9rem;
+    }
+}
+
+/* Estilo para o texto centralizado */
+.texto {
+    background-color: rgb(120, 150, 100);
+    position: relative;
+    margin: 2rem auto;
+    padding: 3rem;
+     box-shadow: 0px 5px 5px 3px rgb(57, 60, 54, 0.666);
+    border-radius: 6px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    max-width: 70%;
+    z-index: 1;
+}
+
+.texto p {
+    font-size: 1.2rem;
+}
+
+/* Ajuste para dispositivos menores */
+@media (max-width: 768px) {
+    .texto {
+        padding: 2rem;
+        border-radius: 2rem;
+    }
+
+    .texto p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .texto {
+        padding: 1.5rem;
+        border-radius: 1.5rem;
+    }
+
+    .texto p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Estilo para o botão */
+.botao button {
+    background-color:  rgb(255, 255, 255);;
+    color:rgb(210, 100, 22);
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botao button:hover {
+    background-color: rgba(255, 255, 255, 0.546);
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+    .botao button {
+        padding: 0.6rem 1.2rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .botao button {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+body{
+    background-color: rgb(157, 106, 74);
+}
+
+
+
+
+
