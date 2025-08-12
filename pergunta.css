@@ -6,7 +6,7 @@
 
 body{
     
-    background-color:rgb(44, 90, 70);
+    background-color:rgb(157, 106, 74);
    }
 
 #enviar{
@@ -42,13 +42,13 @@ body{
   }
 
   fieldset{
-     border: 3px solid  rgba(223, 129, 61 );
+     border: 3px solid   rgb(120, 150, 100);;
     padding: 15px;
   }
 
   
 legend{
-    border: 3px solid  rgba(223, 129, 61 );
+    border: 3px solid   rgb(120, 150, 100);;
     padding: 10px;
     background-color:  rgba(44, 90, 70 );
     border-radius: 10px;
