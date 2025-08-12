@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="telaLogin.css">
+    <link rel="stylesheet" href="login.css">
 </head>
 
 <body>
     <!-- #region -->
 
-    <a href="primeiraTela.php">Voltar</a>
+   <button> <a href="primeiraTela.php">Voltar</a> </button> 
     <div>
         <h1>Login</h1>
         <form action="testeLogin.php" method="POST">
