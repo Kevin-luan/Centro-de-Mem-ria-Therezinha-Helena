@@ -1,7 +1,7 @@
 <?php
 
 
-/*   Teste para verifocar sew o botão submit estar funcionado 
+/*   Teste para verificar sew o botão submit estar funcionado 
 if(isset($_POST['submit']))
 {
     print_r(value: $_POST['avaliar']);

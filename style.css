@@ -1,0 +1,107 @@
+
+
+
+/* Estilo para o header */
+*{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+
+}header {
+      background-color:rgb(120, 150, 100);
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+nav a:hover {
+    color:rgb(157, 106, 74);
+}
+
+nav i {
+    font-size: 18px;
+}
+
+
+
+
+body{
+
+        background-color:rgb(120, 150, 100);
+}
+
+
+h2{
+    text-align: center;
+    font-size: 100px;
+    color: white;
+}
+p{
+
+    font-size: 50px;
+    color: white;
+}
+section{
+ display: grid;
+ place-items: center;
+ align-items: center;
+ min-height: 100vh;
+     margin: 50px;
+  
+}
+
+.hidden{
+
+opacity: 0;
+filter: blur(15px);
+transform: translateX(-100%);
+transition: all 1s;
+
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0%);
+    transition: all 1s;
+}
+
+.botao {
+    padding: 10px 20px;
+    background-color:rgb(157, 106, 74);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botao:hover {
+           background-color:rgb(128, 182, 92);
+
+}
+
+
+
