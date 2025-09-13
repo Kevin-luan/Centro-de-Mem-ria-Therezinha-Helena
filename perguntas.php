@@ -123,7 +123,7 @@ if (isset($_POST['submit'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>selecct enderecos</title>
-    <link rel="stylesheet" href="pergunta.css">
+    <link rel="stylesheet" href="stylePerguntas.css">
 
 
 </head>
@@ -145,8 +145,9 @@ if (isset($_POST['submit'])) {
                 <!---- 1 pergunta-->
 
 
+                <section class="hidden">
 
-                <div class="pergunta1">
+                    <div class="pergunta1">
                     <input type="hidden" name="ids" value="<?php echo htmlspecialchars($ids); ?>">
 
                     <p class="paragrafo">1) Você se considera</p>
@@ -166,8 +167,7 @@ if (isset($_POST['submit'])) {
 
                 </div>
 
-
-                <!---- 2 pergunta-->
+                  <!---- 2 pergunta-->
                 <div class="pergunta2">
                     <p>2) Qual gênero você se identifica ?</p>
 
@@ -249,6 +249,7 @@ if (isset($_POST['submit'])) {
 
                 </div>
 
+                   
                 <!---- 5 pergunta--------------------------------------------------->
                 <div class="pergunta5">
                     <p>5) Atualmente Você Trabalha?</p>
@@ -264,6 +265,13 @@ if (isset($_POST['submit'])) {
 
              
                 </div>
+
+                </section>
+            
+
+                <section class="hidden">
+
+             
 
                 <!---- 6 pergunta--------------------------------------------------->
                 <div class="pergunta6">
@@ -479,9 +487,9 @@ if (isset($_POST['submit'])) {
 
                 </div>
 
-                <!---- 10 pergunta ------------------------>
 
 
+                
                 <div class="pergunta10">
                     <p>10) Por qual motivo você acha que foi construído o estatuto da criança e adolescente ?</p>
 
@@ -491,6 +499,12 @@ if (isset($_POST['submit'])) {
                 </div><br>
 
                 <!---- 11 pergunta perguntas de verdeiro ou falso------------------------>
+                </section>
+              
+
+                <!---- 10 pergunta ------------------------>
+<section class="hidden">
+
 
                 <div class="pergunta11">
 
@@ -641,20 +655,16 @@ if (isset($_POST['submit'])) {
 
                     </div>
 
-
-
-
-
-
-
-
-
                 </div>
 
 
-                <!---- 12 pergunta perguntas de verdeiro ou falso------------------------>
 
-                <div class="pergunta12">
+
+</section>
+
+
+<section class="hidden">
+ <div class="pergunta12">
 
 
                     <p class="paragrafo">12) Em relação a redução da maioridade penal você é ?</p>
@@ -827,12 +837,19 @@ if (isset($_POST['submit'])) {
             </nav>
 
 
+</section>
+
+                <!---- 12 pergunta perguntas de verdeiro ou falso------------------------>
+
+               
+
+
         </fieldset>
     </form>
 
     </div>
 
-
+<script src="index.js"></script>
 </body>
 
 </html>
