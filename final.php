@@ -27,15 +27,21 @@ include_once('config.php');
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['feedback'])) {
     $feedback = $_POST['feedback'];
 
-    // Atenção: Evite SQL Injection
+  
     $feedback = mysqli_real_escape_string($conexao, $feedback);
 
     $result = mysqli_query($conexao, "INSERT INTO feedback(valoFeedback) VALUES ('$feedback')");
 
     if ($result) {
-        echo "<script>alert('Pesquisa enviada com sucesso!');</script>";
+        echo "<script>
+            alert('Pesquisa enviada com sucesso!');
+            window.location.href = 'index.html';
+        </script>";
     } else {
-        echo "<script>alert('Erro ao enviar feedback: " . mysqli_error($conexao) . "');</script>";
+        echo "<script>
+            alert('Erro ao enviar feedback: " . mysqli_error($conexao) . "');
+            window.location.href = 'index.html';
+        </script>";
     }
 }
 
@@ -53,7 +59,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['feedback'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>feedback</title>
-    <link rel="stylesheet" href="feedbabk.css">
+    <link rel="stylesheet" href="final.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -61,21 +67,31 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['feedback'])) {
 
 <body>
 
-    <header>
-
-
+      <header>
         <nav>
             <ul>
-                <li><i class="fa-brands fa-instagram"><a href="https://www.instagram.com/pontodeculturacasadosmeninos/">
-                            instagram</a></i></li>
-                <li> <i class="fa-brands fa-facebook"><a href="https://www.facebook.com/pontodeculturacasadosmeninos">
-                            facebook</a></i> </li>
-                <li> <i class="fa-brands fa-youtube"><a href="https://www.youtube.com/@CasaDosMeninos1"> Youtube</a></i>
+                <li>
+                    <a href="https://www.instagram.com/pontodeculturacasadosmeninos/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i> Instagram
+                    </a>
                 </li>
-
+                <li>
+                    <a href="https://www.facebook.com/pontodeculturacasadosmeninos" target="_blank">
+                        <i class="fa-brands fa-facebook"></i> Facebook
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/@CasaDosMeninos1" target="_blank">
+                        <i class="fa-brands fa-youtube"></i> Youtube
+                    </a>
+                </li>
+                <li>
+                    <a href="https://casadosmeninos.org.br/" target="_blank">
+                        <i class="fa-solid fa-house"></i> Casa
+                    </a>
+                </li>
             </ul>
         </nav>
-
     </header>
 
 
@@ -90,20 +106,31 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['feedback'])) {
                 <div>
 
 
-
-                    <input type="radio" name="feedback" id="muito-bom" class="radio-label" value="Muito Bom" required>
+               
+                            <input type="radio" name="feedback" id="muito-bom" class="radio-label" value="Muito Bom" required>
                     <label for="muito-bom">Muito Bom</label><br>
 
 
 
+               
 
 
-
-
-
+      
+                    
 
                     <input type="radio" name="feedback" id="feedback" class="feedback" value="Bom" required>
                     <label for="verdadeiro">Bom</label><br>
+
+
+
+            
+
+
+
+
+
+
+
 
 
                     <input type="radio" name="feedback" id="feedback" class="feedback" value="ruim" required>
@@ -176,5 +203,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['feedback'])) {
 
 
 </body>
+
 
 </html>

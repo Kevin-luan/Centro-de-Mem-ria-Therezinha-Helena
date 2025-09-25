@@ -12,6 +12,7 @@ $result = $conexao->query($sql);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primeira Tela</title>
     <link rel="stylesheet" href="primeiraTela1.css">
+    
     <!-- Font Awesome para ícones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -47,11 +48,13 @@ $result = $conexao->query($sql);
     </header>
 
     <!-- Conteúdo principal -->
-    <section>
+    <section >
         <div class="m-5">
             <table class="table">
                 <thead class="coluna">
                     <tr>
+
+                    
                         <th scope="col">Id</th>
                         <th scope="col">Nome</th>
                         <th scope="col">Cidade</th>
@@ -62,6 +65,8 @@ $result = $conexao->query($sql);
                 <tbody>
                     <?php
                     while ($user_data = mysqli_fetch_assoc($result)) {
+
+                       
                         echo "<tr>";
                         echo "<td>" . $user_data['id'] . "</td>";
                         echo "<td>" . $user_data['nome'] . "</td>";
@@ -81,6 +86,8 @@ $result = $conexao->query($sql);
             </div>
         </div>
     </section>
+    
 
 </body>
+
 </html>

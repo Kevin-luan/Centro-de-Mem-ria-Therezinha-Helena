@@ -1,0 +1,135 @@
+
+
+
+/* Estilo para o header */
+*{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+
+}header {
+      background-color:rgb(120, 150, 100);
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+nav a:hover {
+    color:rgb(157, 106, 74);
+}
+
+nav i {
+    font-size: 18px;
+}
+
+
+
+
+body{
+
+        background-color:rgb(120, 150, 100);
+}
+fieldset {
+  margin: 30px auto;       /* Centraliza horizontalmente */
+  padding: 20px;
+  width: 80%;              /* Ou um valor fixo como 400px */
+  max-width: 500px;        /* Evita ficar grande demais */
+  border: 5px solid  rgb(157, 106, 74);;
+  border-radius: 10px;
+  color:  rgb(255, 255, 255);;
+}
+
+
+
+p{
+
+    font-size: 50px;
+    color: white;
+}
+label{
+
+    font-size: 30px;
+    color: white;
+}
+
+/* Aumentar o tamanho da bolinha */
+input[type="radio"] {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  accent-color: rgb(157, 106, 74); /* Define a cor da bolinha quando marcada (navegadores modernos) */
+  margin-right: 3px;
+   margin-bottom: 20px; 
+}
+
+/* Alinhar label com a bolinha */
+.radio-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.radio-group label {
+  font-size: 30px;
+  color: white; /* ou outra cor que combine com seu layout */
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+section{
+     display: grid;
+ place-items: center;
+ align-items: center;
+ min-height: 100vh;
+     margin: 50px;
+
+  
+}
+
+
+
+#submit {
+    padding: 10px 20px;
+    background-color:rgb(157, 106, 74);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+#submit:hover {
+           background-color:rgb(128, 182, 92);
+
+}
+
+
+
+
