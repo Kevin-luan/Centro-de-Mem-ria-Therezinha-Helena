@@ -123,7 +123,7 @@ if (isset($_POST['submit'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>selecct enderecos</title>
-    <link rel="stylesheet" href="stylePerguntas.css">
+    <link rel="stylesheet" href="perguntas.css">
 
 
 </head>
@@ -138,63 +138,81 @@ if (isset($_POST['submit'])) {
     <form action="perguntas.php" method="POST">
 
         <fieldset>
-            <legend>Pesquisa do projeto Centro de Memória Terezinha Helena dos Direitos de Criança e Adolescente
+            <legend>Pesquisa do projeto Centro de Memória Therezinha Helena dos Direitos de Criança e Adolescente
             </legend>
+
             <nav class=" lisPerguntas">
+
+
+
 
                 <!---- 1 pergunta-->
 
 
-                <section class="hidden">
+ <section class="hidden">
 
-                    <div class="pergunta1">
+              <div class="pergunta1">
                     <input type="hidden" name="ids" value="<?php echo htmlspecialchars($ids); ?>">
 
                     <p class="paragrafo">1) Você se considera</p>
 
                     <input type="radio" name="idade" id="idade" class="idade" value="cianca" required>
-                    <label for="crianca">Criança&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <label for="crianca">Criança</label><br>
 
                     <input type="radio" name="idade" id="idade" class="idade" value="adulto" required>
-                    <label for="adulto">Adulto&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <label for="adulto">Adulto</label><br>
 
                     <input type="radio" name="idade" id="idade" class="idade" value="adolelcente" required>
                     <label for="adolelcente">Adolelcente</label><br><br>
-
-
-
-
-
                 </div>
 
+
+ </section>
+
+
+
+
+
+
+
                   <!---- 2 pergunta-->
+<section class="hidden">
+
                 <div class="pergunta2">
                     <p>2) Qual gênero você se identifica ?</p>
 
                     <input type="radio" name="genero" id="gereno" class="genero" value="cisgenero feminino" required>
-                    <label for="cisgenero feminino">Cisgenero feminino</label>
+                    <label for="cisgenero feminino">Cisgenero feminino</label><br>
 
                     <input type="radio" name="genero" id="gereno" class="genero" value="cisgeneromasculino" required>
-                    <label for="cisgenero masculino">Cisgenero masculino</label>
+                    <label for="cisgenero masculino">Cisgenero masculino</label><br>
 
                     <input type="radio" name="genero" id="gereno" class="genero" value="transgênero feminino" required>
-                    <label for="transgênero feminino">Transgênero feminino</label>
+                    <label for="transgênero feminino">Transgênero feminino</label><br>
 
                     <input type="radio" name="genero" id="gereno" class="genero" value="Transgênero masculino" required>
-                    <label for="Transgênero masculino">Transgênero masculino</label>
+                    <label for="Transgênero masculino">Transgênero masculino</label><br>
 
                     <input type="radio" name="genero" id="gereno" class="genero" value="perfiro nao responder" required>
-                    <label for="prefiro não responder">Prefiro não responder</label>
+                    <label for="prefiro não responder">Prefiro não responder</label><br>
 
                     <input type="radio" name="genero" id="gereno" class="genero" value="outros" required>
-                    <label for="outros">Não binário</label><br><br>
+                    <label for="outros">Não binário</label><br>
 
                     <input type="radio" name="genero" id="gereno" class="genero" value="outros" required>
                     <label for="outros">Outros</label><br><br>
 
                 </div>
+</section>
 
-                <!---- 3 pergunta-->
+
+
+
+
+                      <!---- 3 pergunta-->
+
+<section class="hidden">
+          
                 <div class="pergunta3">
 
                     <p>3) Com qual cor raça você se identifica? </p>
@@ -216,8 +234,15 @@ if (isset($_POST['submit'])) {
 
                 </div>
 
+</section>
+
                 <!---- 4 pergunta--------------------------------------------------->
+
+
+
+ <section class="hidden">
                 <div class="pergunta4">
+
                     <p>4) Escolaridade ?</p>
 
                     <input type="radio" name="escolaridade" id="escolaridade" class="escolaridade"
@@ -244,37 +269,39 @@ if (isset($_POST['submit'])) {
                     <input type="radio" name="escolaridade" id="escolaridade" class="escolaridade"
                         value="Ensino Superior" required>
                     <label for="Ensino Superior">Outros</label><br>
-
-
-
                 </div>
+</section>
 
                    
                 <!---- 5 pergunta--------------------------------------------------->
-                <div class="pergunta5">
+
+<section class="hidden">
+
+                <<div class="pergunta5">
                     <p>5) Atualmente Você Trabalha?</p>
 
-                    <input type="radio" name="trabalha" id="trabalha" class="trabalha" value="Sim" required>
-                    <label for="Sim">Sim <br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Digite o porque:  <input type="text" name="trabalha" id="trabalho" class="inputUser" <p>(Não obrigatorio)</p> </label>
-                    
+                    <input type="radio" name="trabalha" id="trabalhaSim" class="trabalha" value="Sim" required>
+                    <label for="trabalhaSim">Sim</label><br>
 
+                    <input type="text" name="detalhesTrabalho" id="trabalho" class="inputUser" placeholder="Digite por motivo voce trabalha">
+                    <br><br>
 
-                    <input type="radio" name="trabalha" id="trabalha" class="trabalha" value="Nao" required>
-                    <label for="nao">Não</label><br><br>
+                    <input type="radio" name="trabalha" id="trabalhaNao" class="trabalha" value="Nao" required>
+                    <label for="trabalhaNao">Não</label>
+                    <br><br>
+                 </div>
 
-             
-                </div>
-
-                </section>
+</section>
             
 
-                <section class="hidden">
 
-             
+         <!---- 6 pergunta--------------------------------------------------->
 
-                <!---- 6 pergunta--------------------------------------------------->
-                <div class="pergunta6">
+<section class="hidden">
+     
+    <div class="pergunta6">
+
+
                     <p>6) Qual motivação para Criança e adolecente trabalha ?</p>
 
 
@@ -283,6 +310,7 @@ if (isset($_POST['submit'])) {
                             value="1-Necessidade de complementar a renda familiar">
                         Necessidade de complementar a renda familiar
                     </label><br>
+
 
                     <label>
                         <input type="checkbox" name="motivacaoTrabalho[]"
@@ -346,26 +374,33 @@ if (isset($_POST['submit'])) {
 
 
 
-                </div>
+    </div>
+</section>
 
 
                 <!---- 7 pergunta verdadeiro ou falso------------------------>
 
+<section class="hidden">
+
 
                 <div class="pergunta7">
+                    
+                        <p> Desde 2013 o ensino obrigatório passou a ser da educação infantil a partir de 4 anos até o fim
+                        do ensino médio. Por quais motivos você acha que levou a educação do ensino básico (4 a 17 anos) se
+                        tornar obrigatório no Brasil</p><br>
+                        <h4>Verdadeiro ou falso</h4>
+                </div>
 
-                    <h4>7) Verdadeiro ou falso <p></p>
-                        Desde 2013 o ensino obrigatório passou a ser da educação infantil a partir de 4 anos até o fim
-                        do
-                        ensino médio. Por quais motivos você acha que levou a educação do ensino básico (4 a 17 anos) se
-                        tornar obrigatório no Brasil:</h4><br><br>
+                   
+</section>
 
 
-
-
+                              <!----------------------------->
+<section class="hidden">
+    
                     <div class="pergunta7A">
 
-                        <p>7a) Para cumprir a Emenda Constitucional nº 59/2009, que ampliou a obrigatoriedade da
+                        <p>7a ) Para cumprir a Emenda Constitucional nº 59/2009, que ampliou a obrigatoriedade da
                             educação básica ?
                         </p>
 
@@ -377,17 +412,18 @@ if (isset($_POST['submit'])) {
                         <label for="falso">Falso</label><br>
 
                     </div>
+</section>
 
 
 
-                    <!---------->
-                    <div class="pergunta7B">
 
 
-                        <p>7b) Para alinhar o Brasil às metas do Plano Nacional de Educação (PNE), que prevê a
-                            universalização
-                            do
-                            acesso ? </p>
+                    <!------------------------------>
+<section class="hidden">    
+            <div class="pergunta7B">
+                        
+                 <p>7b) Para alinhar o Brasil às metas do Plano Nacional de Educação (PNE), que prevê a
+                        niversalização do acesso ? </p>
 
                         <input type="radio" name="pergunta7B" id="pergunta7B" class="pergunta7B" value="Verdadeiro"
                             required>
@@ -397,11 +433,15 @@ if (isset($_POST['submit'])) {
                         <label for="falso">Falso</label><br>
 
 
-                    </div>
+            </div>
+</section>
 
 
 
-                    <div class="pergunta7C">
+                    <!------------------------------>
+
+<section class="hidden">    
+            <div class="pergunta7C">
 
                         <p>7c) Porque crianças a partir de 4 anos passaram a ser consideradas adultas pela legislação
                             brasileira ?
@@ -413,13 +453,12 @@ if (isset($_POST['submit'])) {
 
                         <input type="radio" name="pergunta7C" id="pergunta7C" class="pergunta7C" value="falso" required>
                         <label for="falso">Falso</label><br>
+            </div>
+</section>
 
-
-
-
-
-                    </div>
-
+                    
+                    <!------------------------------>
+<section class="hidden">
                     <div class="pergunta7D">
 
                         <p>7d) Para evitar que adolescentes de 16 anos votem, já que estariam ocupados com os estudos ?
@@ -432,37 +471,31 @@ if (isset($_POST['submit'])) {
                         <input type="radio" name="pergunta7D" id="pergunta7D" class="pergunta7D" value="falso" required>
                         <label for="falso">Falso</label><br>
 
-
-
-
-
                     </div>
+</section>
 
 
+              <!------------------------------>
+<section class="hidden">
                     <div class="pergunta7E">
 
                         <p>7e) Porque empresas privadas exigiam mão de obra mais qualificada desde a primeira infância ?
                         </p>
 
-                        <input type="radio" name="pergunta7E" id="pergunta7E" class="pergunta7E" value="Verdadeiro"
-                            required>
-                        <label for="verdadeiro">verdadeiro</label><br>
+                                <input type="radio" name="pergunta7E" id="pergunta7E" class="pergunta7E" value="Verdadeiro"
+                                    required>
+                                <label for="verdadeiro">verdadeiro</label><br>
 
-                        <input type="radio" name="pergunta7E" id="pergunta7E" class="pergunta7E" value="falso" required>
-                        <label for="falso">Falso</label><br>
-
-
-
-
-
-
-
-
-
+                                <input type="radio" name="pergunta7E" id="pergunta7E" class="pergunta7E" value="falso" required>
+                                <label for="falso">Falso</label><br>
                     </div>
-                </div>
+</section>
+
+
 
                 <!---- 8 pergunta ------------------------>
+<section class="hidden">
+        
 
                 <div class="pergunta8">
                     <p>8) Você sabe o que é o ECA ?</p>
@@ -474,7 +507,15 @@ if (isset($_POST['submit'])) {
                     <label for="verdadeiro">Não</label><br>
 
                 </div>
+</section>
+
+
                 <!---- 9 pergunta ------------------------>
+
+
+<section class="hidden">
+
+
 
                 <div class="pergunta9">
                     <p>9) Você sabe quando o ECA foi criado ?</p>
@@ -487,9 +528,10 @@ if (isset($_POST['submit'])) {
 
                 </div>
 
-
-
+</section>
+                <!---- 10 pergunta ------------------------>
                 
+<section class="hidden">
                 <div class="pergunta10">
                     <p>10) Por qual motivo você acha que foi construído o estatuto da criança e adolescente ?</p>
 
@@ -497,107 +539,132 @@ if (isset($_POST['submit'])) {
                     <input type="text" name="pergunta10" id="pergunta10" class="inputUser" required>
 
                 </div><br>
+</section>
+
 
                 <!---- 11 pergunta perguntas de verdeiro ou falso------------------------>
-                </section>
+           
               
 
-                <!---- 10 pergunta ------------------------>
 <section class="hidden">
 
 
                 <div class="pergunta11">
 
                     <h4>11) Verdadeiro ou falso <p></p>O que o Conselho Tutelar realmente faz ? </h4>
+                </div>
+</section>
+
+                     <!---- ----------------------------------->
+
+<section class="hidden">
 
 
                     <div class="pergunta11A">
+
                         <p>11a) Atender crianças e adolescentes em situação de risco (violência, abandono, trabalho infantil) ?
                         </p>
 
-                        <input type="radio" name="pergunta11A" id="pergunta11A" class="pergunta11A" value="Verdadeiro"
-                            required>
-                        <label for="verdadeiro">verdadeiro</label><br>
+                            <input type="radio" name="pergunta11A" id="pergunta11A" class="pergunta11A" value="Verdadeiro"
+                                required>
+                            <label for="verdadeiro">verdadeiro</label><br>
 
-                        <input type="radio" name="pergunta11A" id="pergunta11A" class="pergunta11A" value="falso"
-                            required>
-                        <label for="falso">Falso</label><br>
+                            <input type="radio" name="pergunta11A" id="pergunta11A" class="pergunta11A" value="falso"
+                                required>
+                            <label for="falso">Falso</label><br>
 
                     </div>
+</section>
+                 <!---- ----------------------------------->
 
+<section class="hidden">
                     <div class="pergunta11B">
                         <p>11b) Aplicar medidas de proteção, como encaminhamento a abrigos ou programas sociais?
                         </p>
 
-                        <input type="radio" name="pergunta11B" id="pergunta11B" class="pergunta11B" value="Verdadeiro"
-                            required>
-                        <label for="verdadeiro">verdadeiro</label><br>
+                            <input type="radio" name="pergunta11B" id="pergunta11B" class="pergunta11B" value="Verdadeiro"
+                                required>
+                            <label for="verdadeiro">verdadeiro</label><br>
 
-                        <input type="radio" name="pergunta11B" id="pergunta11B" class="pergunta11B" value="falso"
-                            required>
-                        <label for="falso">Falso</label><br>
+                            <input type="radio" name="pergunta11B" id="pergunta11B" class="pergunta11B" value="falso"
+                                required>
+                            <label for="falso">Falso</label><br>
 
                     </div>
-
+</section>
+                    <!---- -----------------------------------> 
+<section class="hidden">
                     <div class="pergunta11C">
                         <p>11c) Fiscalizar o cumprimento dos direitos da criança e do adolescente (educação, saúde,
                             convivência familiar) ?
                         </p>
 
-                        <input type="radio" name="pergunta11C" id="pergunta11C" class="pergunta11C" value="Verdadeiro"
-                            required>
-                        <label for="verdadeiro">verdadeiro</label><br>
+                            <input type="radio" name="pergunta11C" id="pergunta11C" class="pergunta11C" value="Verdadeiro"
+                                required>
+                            <label for="verdadeiro">verdadeiro</label><br>
 
-                        <input type="radio" name="pergunta11C" id="pergunta11C" class="pergunta11C" value="falso"
-                            required>
-                        <label for="falso">Falso</label><br>
+                            <input type="radio" name="pergunta11C" id="pergunta11C" class="pergunta11C" value="falso"
+                                required>
+                            <label for="falso">Falso</label><br>
 
                     </div>
+</section>
 
+
+                    <!---- -----------------------------------> 
+<section class="hidden">
                     <div class="pergunta11D">
+
                         <p>11d) Receber denúncias de violações de direitos via Disque 100 ou diretamente na sede ?
                         </p>
 
-                        <input type="radio" name="pergunta11D" id="pergunta11D" class="pergunta11D" value="Verdadeiro"
-                            required>
-                        <label for="verdadeiro">verdadeiro</label><br>
+                            <input type="radio" name="pergunta11D" id="pergunta11D" class="pergunta11D" value="Verdadeiro"
+                                required>
+                            <label for="verdadeiro">verdadeiro</label><br>
 
-                        <input type="radio" name="pergunta11D" id="pergunta11D" class="pergunta11D" value="falso"
-                            required>
-                        <label for="falso">Falso</label><br>
+                            <input type="radio" name="pergunta11D" id="pergunta11D" class="pergunta11D" value="falso"
+                                required>
+                            <label for="falso">Falso</label><br>
 
                     </div>
+                    
+</section>
+                    <!---- ----------------------------------->
+
+<section class="hidden">
 
                     <div class="pergunta11E">
                         <p>11e) Exigir que pais ou responsáveis cumpram obrigações (como matricular filhos na escola) ?
                         </p>
 
-                        <input type="radio" name="pergunta11E" id="pergunta11E" class="pergunta11E" value="Verdadeiro"
-                            required>
-                        <label for="verdadeiro">verdadeiro</label><br>
+                            <input type="radio" name="pergunta11E" id="pergunta11E" class="pergunta11E" value="Verdadeiro"
+                                required>
+                            <label for="verdadeiro">verdadeiro</label><br>
 
-                        <input type="radio" name="pergunta11E" id="pergunta11E" class="pergunta11E" value="falso"
-                            required>
-                        <label for="falso">Falso</label><br>
+                            <input type="radio" name="pergunta11E" id="pergunta11E" class="pergunta11E" value="falso"
+                                required>
+                            <label for="falso">Falso</label><br>
 
                     </div>
-
-
+</section>
+                    <!---- ----------------------------------->
+<section class="hidden">
                     <div class="pergunta11F">
                         <p>11f) Punir adolescentes infratores com prisão ou medidas socioeducativas ?
                         </p>
 
-                        <input type="radio" name="pergunta11F" id="pergunta11F" class="pergunta11F" value="Verdadeiro"
-                            required>
-                        <label for="verdadeiro">verdadeiro</label><br>
+                            <input type="radio" name="pergunta11F" id="pergunta11F" class="pergunta11F" value="Verdadeiro"
+                                required>
+                            <label for="verdadeiro">verdadeiro</label><br>
 
-                        <input type="radio" name="pergunta11F" id="pergunta11F" class="pergunta11F" value="falso"
-                            required>
-                        <label for="falso">Falso</label><br>
+                            <input type="radio" name="pergunta11F" id="pergunta11F" class="pergunta11F" value="falso"
+                                required>
+                            <label for="falso">Falso</label><br>
 
                     </div>
-
-
+</section>
+                    <!---- ----------------------------------->  
+<section class="hidden">
                     <div class="pergunta11G">
                         <p>11g) Substituir a família, tirando crianças de casa sem justificativa legal ?
                         </p>
@@ -611,7 +678,9 @@ if (isset($_POST['submit'])) {
                         <label for="falso">Falso</label><br>
 
                     </div>
-
+</section>
+                    <!---- -----------------------------------> 
+<section class="hidden">
                     <div class="pergunta11H">
                         <p>11h) Dar multas ou prender pais que não vacinarem os filhos ?
                         </p>
@@ -625,7 +694,11 @@ if (isset($_POST['submit'])) {
                         <label for="falso">Falso</label><br>
 
                     </div>
-
+</section>
+                    <!---- -----------------------------------> 
+                  
+<section class="hidden">
+                    
 
                     <div class="pergunta11I">
                         <p>11i) Fornecer auxílio financeiro diretamente às famílias ?
@@ -640,7 +713,11 @@ if (isset($_POST['submit'])) {
                         <label for="falso">Falso</label><br>
 
                     </div>
+</section>
 
+
+                    <!---- ----------------------------------->
+<section class="hidden">
                     <div class="pergunta11J">
                         <p>11j) Decidir sozinho sobre adoções internacionais ?
                         </p>
@@ -654,34 +731,29 @@ if (isset($_POST['submit'])) {
                         <label for="falso">Falso</label><br><br><br>
 
                     </div>
-
-                </div>
-
-
-
-
 </section>
 
+                <!---- 12 pergunta perguntas de verdeiro ou falso------------------------>
 
 <section class="hidden">
- <div class="pergunta12">
-
-
+                <div class="pergunta12">
                     <p class="paragrafo">12) Em relação a redução da maioridade penal você é ?</p>
 
-                    <input type="radio" name="pergunta12" id="pergunta12" class="pergunta12" value="contra" required>
-                    <label for="crianca">Contra</label>
+                        <input type="radio" name="pergunta12" id="pergunta12" class="pergunta12" value="contra" required>
+                        <label for="crianca">Contra</label>
 
-                    <input type="radio" name="pergunta12" id="pergunta12" class="pergunta12" value="a favor" required>
-                    <label for="crianca">A favor</label>
+                        <input type="radio" name="pergunta12" id="pergunta12" class="pergunta12" value="a favor" required>
+                        <label for="crianca">A favor</label>
 
-                    <input type="radio" name="pergunta12" id="pergunta12" class="pergunta12" value="nao sei" required>
-                    <label for="crianca">Não sei</label><br><br>
+                        <input type="radio" name="pergunta12" id="pergunta12" class="pergunta12" value="nao sei" required>
+                        <label for="crianca">Não sei</label><br><br>
 
 
                 </div>
+</section>
 
                 <!---- 13 pergunta perguntas de verdeiro ou falso------------------------>
+<section class="hidden">
                 <div class="pergunta13">
 
                     <p>13) Você participa de algum grupo ou movimento que discute sobre o Direitos de Criança e Adolescente
@@ -696,12 +768,13 @@ if (isset($_POST['submit'])) {
 
 
                 </div>
+</section>
 
                 <!---- 14 pergunta perguntas de verdeiro ou falso------------------------>
+<section class="hidden">
                 <div class="pergunta14">
 
-                    <p>14) Na escola você discute sobre o DCA ?
-                    </p>
+                    <p>14) Na escola você discute sobre o DCA ?</p>
 
                     <input type="radio" name="pergunta14" id="pergunta14" class="pergunta14" value="Sim" required>
                     <label for="Sim">Sim</label><br>
@@ -714,25 +787,26 @@ if (isset($_POST['submit'])) {
                     <label for="Sim">Não consigo responder
                     </label><br><br>
                 </div>
+</section>
 
 
                 <!---- 15 pergunta perguntas de verdeiro ou falso------------------------>
-
+<section class="hidden">
                 <div class="pergunta15">
 
-                    <p>15) Você já ouviu falar sobre as Conferências de DCA ?
-                    </p>
+                    <p>15) Você já ouviu falar sobre as Conferências de DCA ?</p>
+                        <input type="radio" name="pergunta15" id="pergunta15" class="pergunta15" value="Sim" required>
+                        <label for="Sim">Sim</label><br>
 
-                    <input type="radio" name="pergunta15" id="pergunta15" class="pergunta15" value="Sim" required>
-                    <label for="Sim">Sim</label><br>
-
-                    <input type="radio" name="pergunta15" id="pergunta15" class="pergunta15" value="nao" required>
-                    <label for="nao">Não</label><br><br>
+                        <input type="radio" name="pergunta15" id="pergunta15" class="pergunta15" value="nao" required>
+                        <label for="nao">Não</label><br><br>
                 </div>
+</section>
 
 
                 <!---- 16 pergunta perguntas de verdeiro ou falso------------------------>
 
+<section class="hidden">
                 <div class="pergunta16">
 
                     <p>16) Você já participou de alguma Conferência DCA ?
@@ -746,8 +820,10 @@ if (isset($_POST['submit'])) {
                     <label for="nao">Não</label><br><br>
 
                 </div>
+</section>
 
 
+<section class="hidden">
                 <!---- 17 pergunta perguntas de verdeiro ou falso------------------------>
                 <div class="pergunta17">
 
@@ -758,26 +834,25 @@ if (isset($_POST['submit'])) {
                     <input type="text" name="pergunta17" id="pergunta17" class="inputUser" required>
 
                 </div><br>
+</section>
 
                 <!---- 18 pergunta perguntas de verdeiro ou falso------------------------>
-
+<section class="hidden">
                 <div class="pergunta18">
 
-                    <p>18) Você sabia que os conselheiros tutelares são eleitos pela população a cada 4 anos ?
+                    <p>18) Você sabia que os conselheiros tutelares são eleitos pela população a cada 4 anos ?</p>
 
-                    </p>
+                        <input type="radio" name="pergunta18" id="pergunta18" class="pergunta18" value="Sim" required>
+                        <label for="Sim">Sim</label><br>
 
-                    <input type="radio" name="pergunta18" id="pergunta18" class="pergunta18" value="Sim" required>
-                    <label for="Sim">Sim</label><br>
-
-                    <input type="radio" name="pergunta18" id="pergunta18" class="pergunta18" value="nao" required>
-                    <label for="nao">Não</label><br><br>
+                        <input type="radio" name="pergunta18" id="pergunta18" class="pergunta18" value="nao" required>
+                        <label for="nao">Não</label><br><br>
 
                 </div>
-
-
+</section>
 
                 <!---- 19 pergunta perguntas de verdeiro ou falso------------------------>
+<section class="hidden">               
                 <div class="pergunta19">
 
 
@@ -791,9 +866,10 @@ if (isset($_POST['submit'])) {
                     <label for="nao">Não</label><br><br>
 
                 </div>
+</section>
+                               <!---- 20 pergunta ------------------------>
 
-
-                <!---- 20 pergunta ------------------------>
+<section class="hidden">  
 
                 <div class="pergunta20">
 
@@ -804,26 +880,7 @@ if (isset($_POST['submit'])) {
                     <input type="text" name="pergunta20" id="pergunta20" class="inputUser" required>
 
                 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ </section>
 
 
                 <div class="perguntaBotao">
@@ -842,8 +899,6 @@ if (isset($_POST['submit'])) {
                 <!---- 12 pergunta perguntas de verdeiro ou falso------------------------>
 
                
-
-
         </fieldset>
     </form>
 

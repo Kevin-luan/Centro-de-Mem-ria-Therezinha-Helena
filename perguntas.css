@@ -1,0 +1,136 @@
+body {
+    background-color: rgb(120, 150, 100);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+h2 {
+    text-align: center;
+    font-size: 100px;
+    color: white;
+}
+h4 {
+    font-size: 70px;
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+p {
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+}
+input[type="radio"] {
+    transform: scale(1.5); /* aumenta a bolinha */
+    vertical-align: middle; /* alinha verticalmente com o texto */
+    margin-right: 10px; /* espaço entre bolinha e texto */
+}
+
+label {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    display: inline-block; /* para que fique na mesma linha que o input */
+    margin-bottom: 15px; /* espaçamento entre linhas */
+}
+.inputUser {
+    width: 100%;       /* ocupa toda a largura do container pai */
+    max-width: 600px;  /* limita a largura máxima (ajuste se quiser) */
+    height: 50px;      /* altura maior para a caixa */
+    padding: 10px;     /* espaço interno para ficar mais confortável */
+    font-size: 18px;   /* tamanho da fonte maior */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* para o padding não aumentar a largura total */
+}
+
+
+section {
+    height: 100vh;             /* Ocupa toda a altura da janela */
+    width: 100vw;              /* Ocupa toda a largura da janela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    box-sizing: border-box;
+    scroll-snap-align: start;
+}
+
+
+
+.hidden{
+
+opacity: 0;
+filter: blur(15px);
+transform: translateX(-100%);
+transition: all 1s;
+
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0%);
+    transition: all 1s;
+}
+
+
+
+
+
+  fieldset{
+     border: 2px solid   rgb(157, 106, 74);
+    padding: 5px;
+  }
+
+  
+legend{
+    border: 2px solid   rgb(157, 106, 74);
+    padding: 10px;
+    background-color:   rgb(157, 106, 74);;
+    border-radius: 2px;
+    color:white;
+    
+}
+
+
+
+
+
+#enviar{
+    color:green;
+    padding-right: 35px;
+    border-radius: 10px;
+    
+}
+
+#enviar:hover{
+    color:white;
+    background-color:green;
+}
+
+
+#voltar{
+    color: orange;
+    padding-right: 10px;
+     padding-right: 35px;
+    border-radius: 10px;
+    
+}
+
+
+#voltar:hover{
+    color:white;
+    background-color: orange;
+    
+}
+
+.perguntaBotao {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding: 50px;
+  }
