@@ -11,7 +11,7 @@ $result = $conexao->query($sql);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primeira Tela</title>
-    <link rel="stylesheet" href="primeiraTela1.css">
+    <link rel="stylesheet" href="gestao.css">
     
     <!-- Font Awesome para ícones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -19,10 +19,7 @@ $result = $conexao->query($sql);
 
 <body>
 
-
-
-
-<!-- Menu de navegação -->
+    <!-- Menu de navegação -->
     <header>
         <nav>
             <ul>
@@ -49,8 +46,6 @@ $result = $conexao->query($sql);
             </ul>
         </nav>
     </header>
-    <h3>Escolha abaixo, o local que você pertence e clique em “selecionar” </h3>
-
 
     <!-- Conteúdo principal -->
     <section >
@@ -77,7 +72,11 @@ $result = $conexao->query($sql);
                         echo "<td>" . $user_data['nome'] . "</td>";
                         echo "<td>" . $user_data['cidade'] . "</td>";
                         echo "<td>" . $user_data['estado'] . "</td>";
-                        echo "<td><a class='btn-avancar' href='perguntas.php?id={$user_data['id']}'>Selecionar</a></td>";
+                        echo "<td><a href='excluir.php?id=" . $user_data['id'] . "' onclick='return confirm(\"Tem certeza que deseja excluir?\")'class='btn-avancar'>Excluir</a></td>";
+                        echo "<td></td>";
+                       
+                       
+                       
                         echo "</tr>";
                     }
                     ?>
@@ -86,7 +85,7 @@ $result = $conexao->query($sql);
 
             <!-- Botões inferiores -->
             <div class="botao">
-                <a href="login.php" class="btn-avancar">ADM</a>
+                <a href="endereco.php" class="btn-avancar">Novo endereço</a>
                 <a href="index.html" class="btn-avancar">Voltar</a>
             </div>
         </div>

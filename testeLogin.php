@@ -27,7 +27,7 @@ if (isset($_POST['submit']) && !empty($_POST['nome']) && !empty($_POST['senha'])
 
     header(header: 'location: login.php');
    }else{
-    header('location: endereco.php');
+    header('location: gestao.php');
    }
 
     

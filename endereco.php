@@ -117,7 +117,7 @@ if (isset($_POST['submit'])) {
 
 
         </form>
-        <a href="primeiraTela.php
+        <a href="gestao.php
         "><button>Voltar</button></a>
 
     </div>

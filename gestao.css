@@ -1,0 +1,130 @@
+/* Reset e fontes */
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 10px;
+      background-color: rgb(120, 150, 100);
+    min-height: 100vh;
+}
+
+/* Header e Menu */
+header {
+    background-color: rgb(120, 150, 100);
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+nav a:hover {
+    color: rgb(157, 106, 74);
+}
+
+nav i {
+    font-size: 18px;
+}
+
+/* Seção central */
+section {
+    display: grid;
+    place-items: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: -40px;
+}
+
+
+
+
+/* Tabela responsiva */
+.table {
+    background-color:  rgb(120, 150, 100);
+    border-radius: 15px;
+    padding: 30px;
+    width: 100%;
+    max-width: 800px;
+    overflow-x: auto;
+    box-shadow: 12px 12px 12px 12px  rgba(0, 0, 0, 0.261);
+}
+
+.coluna th {
+    color: white;
+    font-size: 14px;
+    padding: 10px;
+    background-color: rgb(120, 150, 100);
+    text-align: left;
+    box-shadow: 5px 5px 5px rgb(60, 59, 59);
+    border-radius: 5px;
+}
+
+tbody {
+    color: white;
+    font-size: 20px;
+}
+
+td {
+    padding: 12px;
+}
+
+/* Links padrão */
+a {
+    color: rgb(17, 37, 28);
+    text-decoration: none;
+}
+
+a:focus {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Botão personalizado */
+.botao {
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.btn-avancar {
+    padding: 8px 15px;
+    font-size: 15px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.516);
+    color: black;
+    box-shadow: 3px 3px 3px rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-avancar:hover {
+    background-color: white;
+    transform: translateY(-2px);
+}
