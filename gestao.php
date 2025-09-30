@@ -20,26 +20,22 @@ $result = $conexao->query($sql);
 <body>
 
     <!-- Menu de navegação -->
-    <header>
+     <header>
         <nav>
             <ul>
                 <li>
-                    <a href="https://www.instagram.com/pontodeculturacasadosmeninos/" target="_blank">
+                    <a href="https://www.instagram.com/therezinhahelena.dca/" target="_blank">
                         <i class="fa-brands fa-instagram"></i> Instagram
                     </a>
                 </li>
+               
                 <li>
-                    <a href="https://www.facebook.com/pontodeculturacasadosmeninos" target="_blank">
-                        <i class="fa-brands fa-facebook"></i> Facebook
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/@CasaDosMeninos1" target="_blank">
+                    <a href="https://www.youtube.com/@CENTRODEMEMORIATEREZINHAHELENA" target="_blank">
                         <i class="fa-brands fa-youtube"></i> Youtube
                     </a>
                 </li>
                 <li>
-                    <a href="https://casadosmeninos.org.br/" target="_blank">
+                    <a href="https://centrodememoriadca.org.br/" target="_blank">
                         <i class="fa-solid fa-house"></i> Casa
                     </a>
                 </li>

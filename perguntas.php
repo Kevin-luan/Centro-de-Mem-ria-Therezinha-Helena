@@ -155,15 +155,17 @@ if (isset($_POST['submit'])) {
                     <input type="hidden" name="ids" value="<?php echo htmlspecialchars($ids); ?>">
 
                     <p class="paragrafo">1) Você se considera</p>
-
+                    
                     <input type="radio" name="idade" id="idade" class="idade" value="cianca" required>
                     <label for="crianca">Criança</label><br>
 
-                    <input type="radio" name="idade" id="idade" class="idade" value="adulto" required>
-                    <label for="adulto">Adulto</label><br>
-
                     <input type="radio" name="idade" id="idade" class="idade" value="adolelcente" required>
-                    <label for="adolelcente">Adolelcente</label><br><br>
+                    <label for="adolelcente">Adolelcente</label><br>
+
+                    <input type="radio" name="idade" id="idade" class="idade" value="adulto" required>
+                    <label for="adulto">Adulto</label><br><br>
+
+             
                 </div>
 
 
@@ -283,7 +285,7 @@ if (isset($_POST['submit'])) {
                     <input type="radio" name="trabalha" id="trabalhaSim" class="trabalha" value="Sim" required>
                     <label for="trabalhaSim">Sim</label><br>
 
-                    <input type="text" name="detalhesTrabalho" id="trabalho" class="inputUser" placeholder="Digite por motivo voce trabalha">
+                    <input type="text" name="detalhesTrabalho" id="trabalho" class="inputUser" placeholder="Nos diga o motivo de você estar trabalhando">
                     <br><br>
 
                     <input type="radio" name="trabalha" id="trabalhaNao" class="trabalha" value="Nao" required>
@@ -302,7 +304,7 @@ if (isset($_POST['submit'])) {
     <div class="pergunta6">
 
 
-                    <p>6) Qual motivação para Criança e adolecente trabalha ?</p>
+                    <p>6) Na sua opinião, as principais motivações para criança e adolescente trabalhar?</p>
 
 
                     <label>
@@ -369,17 +371,25 @@ if (isset($_POST['submit'])) {
                     </label><br>
 
 
-                    <label for="nome">Outro motivo (especifique): </label>
-                    <input type="text" name="motivacaoTrabalho[]" id="motivacaoTrabalho[]" class="inputUser">
+                    <label for="nome">Outro motivo (especifique)? </label>
+                    <input type="text" name="motivacaoTrabalho[]" id="motivacaoTrabalho[]" class="inputUser"><br><br><br><br><br><br>
 
 
 
     </div>
 </section>
+                <!---- ---------- ISSO FOI UMA  GAMBIARRA -->  
+                           <!---- ------- PFV, Não mexer -->        
+                
+                            <section class="hidden">
+                                        <br>
+                            </section>
+                        
 
 
                 <!---- 7 pergunta verdadeiro ou falso------------------------>
 
+    
 <section class="hidden">
 
 
@@ -401,7 +411,7 @@ if (isset($_POST['submit'])) {
                     <div class="pergunta7A">
 
                         <p>7a ) Para cumprir a Emenda Constitucional nº 59/2009, que ampliou a obrigatoriedade da
-                            educação básica ?
+                            educação básica.
                         </p>
 
                         <input type="radio" name="pergunta7A" id="pergunta7A" class="pergunta7A" value="Verdadeiro"
@@ -423,7 +433,7 @@ if (isset($_POST['submit'])) {
             <div class="pergunta7B">
                         
                  <p>7b) Para alinhar o Brasil às metas do Plano Nacional de Educação (PNE), que prevê a
-                        niversalização do acesso ? </p>
+                        niversalização do acesso. </p>
 
                         <input type="radio" name="pergunta7B" id="pergunta7B" class="pergunta7B" value="Verdadeiro"
                             required>
@@ -444,7 +454,7 @@ if (isset($_POST['submit'])) {
             <div class="pergunta7C">
 
                         <p>7c) Porque crianças a partir de 4 anos passaram a ser consideradas adultas pela legislação
-                            brasileira ?
+                            brasileira.
                         </p>
 
                         <input type="radio" name="pergunta7C" id="pergunta7C" class="pergunta7C" value="Verdadeiro"
@@ -461,7 +471,7 @@ if (isset($_POST['submit'])) {
 <section class="hidden">
                     <div class="pergunta7D">
 
-                        <p>7d) Para evitar que adolescentes de 16 anos votem, já que estariam ocupados com os estudos ?
+                        <p>7d) Para evitar que adolescentes de 16 anos votem, já que estariam ocupados com os estudos.
                         </p>
 
                         <input type="radio" name="pergunta7D" id="pergunta7D" class="pergunta7D" value="Verdadeiro"
@@ -479,7 +489,7 @@ if (isset($_POST['submit'])) {
 <section class="hidden">
                     <div class="pergunta7E">
 
-                        <p>7e) Porque empresas privadas exigiam mão de obra mais qualificada desde a primeira infância ?
+                        <p>7e) Porque empresas privadas exigiam mão de obra mais qualificada desde a primeira infância.
                         </p>
 
                                 <input type="radio" name="pergunta7E" id="pergunta7E" class="pergunta7E" value="Verdadeiro"
@@ -533,7 +543,7 @@ if (isset($_POST['submit'])) {
                 
 <section class="hidden">
                 <div class="pergunta10">
-                    <p>10) Por qual motivo você acha que foi construído o estatuto da criança e adolescente ?</p>
+                    <p>10) Por qual motivo você acha que foi construído o estatuto da criança e adolescente?</p>
 
                     <label for="nome">Resposta: </label>
                     <input type="text" name="pergunta10" id="pergunta10" class="inputUser" required>
@@ -562,7 +572,7 @@ if (isset($_POST['submit'])) {
 
                     <div class="pergunta11A">
 
-                        <p>11a) Atender crianças e adolescentes em situação de risco (violência, abandono, trabalho infantil) ?
+                        <p>11a) Atender crianças e adolescentes em situação de risco (violência, abandono, trabalho infantil).
                         </p>
 
                             <input type="radio" name="pergunta11A" id="pergunta11A" class="pergunta11A" value="Verdadeiro"
@@ -579,7 +589,7 @@ if (isset($_POST['submit'])) {
 
 <section class="hidden">
                     <div class="pergunta11B">
-                        <p>11b) Aplicar medidas de proteção, como encaminhamento a abrigos ou programas sociais?
+                        <p>11b) Aplicar medidas de proteção, como encaminhamento a abrigos ou programas sociais.
                         </p>
 
                             <input type="radio" name="pergunta11B" id="pergunta11B" class="pergunta11B" value="Verdadeiro"
@@ -596,7 +606,7 @@ if (isset($_POST['submit'])) {
 <section class="hidden">
                     <div class="pergunta11C">
                         <p>11c) Fiscalizar o cumprimento dos direitos da criança e do adolescente (educação, saúde,
-                            convivência familiar) ?
+                            convivência familiar).
                         </p>
 
                             <input type="radio" name="pergunta11C" id="pergunta11C" class="pergunta11C" value="Verdadeiro"
@@ -615,7 +625,7 @@ if (isset($_POST['submit'])) {
 <section class="hidden">
                     <div class="pergunta11D">
 
-                        <p>11d) Receber denúncias de violações de direitos via Disque 100 ou diretamente na sede ?
+                        <p>11d) Receber denúncias de violações de direitos via Disque 100 ou diretamente na sede.
                         </p>
 
                             <input type="radio" name="pergunta11D" id="pergunta11D" class="pergunta11D" value="Verdadeiro"
@@ -634,7 +644,7 @@ if (isset($_POST['submit'])) {
 <section class="hidden">
 
                     <div class="pergunta11E">
-                        <p>11e) Exigir que pais ou responsáveis cumpram obrigações (como matricular filhos na escola) ?
+                        <p>11e) Exigir que pais ou responsáveis cumpram obrigações (como matricular filhos na escola).
                         </p>
 
                             <input type="radio" name="pergunta11E" id="pergunta11E" class="pergunta11E" value="Verdadeiro"
@@ -650,7 +660,7 @@ if (isset($_POST['submit'])) {
                     <!---- ----------------------------------->
 <section class="hidden">
                     <div class="pergunta11F">
-                        <p>11f) Punir adolescentes infratores com prisão ou medidas socioeducativas ?
+                        <p>11f) Punir adolescentes infratores com prisão ou medidas socioeducativas.
                         </p>
 
                             <input type="radio" name="pergunta11F" id="pergunta11F" class="pergunta11F" value="Verdadeiro"
@@ -666,7 +676,7 @@ if (isset($_POST['submit'])) {
                     <!---- ----------------------------------->  
 <section class="hidden">
                     <div class="pergunta11G">
-                        <p>11g) Substituir a família, tirando crianças de casa sem justificativa legal ?
+                        <p>11g) Substituir a família, tirando crianças de casa sem justificativa legal.
                         </p>
 
                         <input type="radio" name="pergunta11G" id="pergunta11G" class="pergunta11G" value="Verdadeiro"
@@ -682,7 +692,7 @@ if (isset($_POST['submit'])) {
                     <!---- -----------------------------------> 
 <section class="hidden">
                     <div class="pergunta11H">
-                        <p>11h) Dar multas ou prender pais que não vacinarem os filhos ?
+                        <p>11h) Dar multas ou prender pais que não vacinarem os filhos.
                         </p>
 
                         <input type="radio" name="pergunta11H" id="pergunta11H" class="pergunta11H" value="Verdadeiro"
@@ -701,7 +711,7 @@ if (isset($_POST['submit'])) {
                     
 
                     <div class="pergunta11I">
-                        <p>11i) Fornecer auxílio financeiro diretamente às famílias ?
+                        <p>11i) Fornecer auxílio financeiro diretamente às famílias.
                         </p>
 
                         <input type="radio" name="pergunta11I" id="pergunta11I" class="pergunta11I" value="Verdadeiro"
@@ -719,7 +729,7 @@ if (isset($_POST['submit'])) {
                     <!---- ----------------------------------->
 <section class="hidden">
                     <div class="pergunta11J">
-                        <p>11j) Decidir sozinho sobre adoções internacionais ?
+                        <p>11j) Decidir sozinho sobre adoções internacionais.
                         </p>
 
                         <input type="radio" name="pergunta11J" id="pergunta11J" class="pergunta11J" value="Verdadeiro"
@@ -737,7 +747,7 @@ if (isset($_POST['submit'])) {
 
 <section class="hidden">
                 <div class="pergunta12">
-                    <p class="paragrafo">12) Em relação a redução da maioridade penal você é ?</p>
+                    <p class="paragrafo">12) Em relação a redução da maioridade penal você é?</p>
 
                         <input type="radio" name="pergunta12" id="pergunta12" class="pergunta12" value="contra" required>
                         <label for="crianca">Contra</label>
@@ -757,7 +767,7 @@ if (isset($_POST['submit'])) {
                 <div class="pergunta13">
 
                     <p>13) Você participa de algum grupo ou movimento que discute sobre o Direitos de Criança e Adolescente
-                        (DCA) ?
+                        (DCA)
                     </p>
 
                     <input type="radio" name="pergunta13" id="pergunta13" class="pergunta13" value="Sim" required>

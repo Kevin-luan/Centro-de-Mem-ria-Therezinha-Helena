@@ -11,55 +11,47 @@ $result = $conexao->query($sql);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primeira Tela</title>
-    <link rel="stylesheet" href="primeiraTela1.css">
-    
+    <link rel="stylesheet" href="primeiraTela.css">
+
     <!-- Font Awesome para ícones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
 
-
-
-
-<!-- Menu de navegação -->
-    <header>
+    <!-- Menu de navegação -->
+      <header>
         <nav>
             <ul>
                 <li>
-                    <a href="https://www.instagram.com/pontodeculturacasadosmeninos/" target="_blank">
+                    <a href="https://www.instagram.com/therezinhahelena.dca/" target="_blank">
                         <i class="fa-brands fa-instagram"></i> Instagram
                     </a>
                 </li>
+               
                 <li>
-                    <a href="https://www.facebook.com/pontodeculturacasadosmeninos" target="_blank">
-                        <i class="fa-brands fa-facebook"></i> Facebook
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/@CasaDosMeninos1" target="_blank">
+                    <a href="https://www.youtube.com/@CENTRODEMEMORIATEREZINHAHELENA" target="_blank">
                         <i class="fa-brands fa-youtube"></i> Youtube
                     </a>
                 </li>
                 <li>
-                    <a href="https://casadosmeninos.org.br/" target="_blank">
+                    <a href="https://centrodememoriadca.org.br/" target="_blank">
                         <i class="fa-solid fa-house"></i> Casa
                     </a>
                 </li>
             </ul>
         </nav>
     </header>
-    <h3>Escolha abaixo, o local que você pertence e clique em “selecionar” </h3>
+
 
 
     <!-- Conteúdo principal -->
-    <section >
+    <section>
+            <h3>Escolha abaixo, o local que você pertence e clique em “selecionar”</h3>
         <div class="m-5">
             <table class="table">
                 <thead class="coluna">
                     <tr>
-
-                    
                         <th scope="col">Id</th>
                         <th scope="col">Nome</th>
                         <th scope="col">Cidade</th>
@@ -70,8 +62,6 @@ $result = $conexao->query($sql);
                 <tbody>
                     <?php
                     while ($user_data = mysqli_fetch_assoc($result)) {
-
-                       
                         echo "<tr>";
                         echo "<td>" . $user_data['id'] . "</td>";
                         echo "<td>" . $user_data['nome'] . "</td>";
@@ -91,8 +81,6 @@ $result = $conexao->query($sql);
             </div>
         </div>
     </section>
-    
 
 </body>
-
 </html>

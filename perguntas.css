@@ -57,9 +57,15 @@ section {
     padding: 40px;
     box-sizing: border-box;
     scroll-snap-align: start;
+    
 }
 
-
+section.hidden {
+    height: 20px; /* ou margin, se preferir */
+}
+section.show {
+    height: 100vh; /* ou margin, se preferir */
+}
 
 .hidden{
 
